@@ -7,9 +7,6 @@ public class KerucutTerpancung extends Kerucut {
     private double t2;
     private double ratas;
     private double s2;
-    public final double luas;
-    public final double volume;
-
     public KerucutTerpancung() {
         super();
         this.t1 = 10;
@@ -17,8 +14,6 @@ public class KerucutTerpancung extends Kerucut {
         this.ratas = 10;
         this.s2 = (Math.sqrt((Math.pow(super.r, 2)
                 + Math.pow(this.t2, 2))));
-        this.luas = this.hitungLuas();
-        this.volume = this.hitungVolume();
     }
     
     public KerucutTerpancung(double r, double ratas, double t1, double t2) {
@@ -28,8 +23,6 @@ public class KerucutTerpancung extends Kerucut {
         this.ratas = ratas;
         this.s2 = (Math.sqrt((Math.pow(super.r, 2)
                 + Math.pow(this.t2, 2))));
-        this.luas = this.hitungLuas();
-        this.volume = this.hitungVolume();
     }
 
     public double hitungLuas() {

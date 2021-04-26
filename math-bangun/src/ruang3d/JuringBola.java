@@ -5,23 +5,17 @@ public final class JuringBola extends Bola {
 
     private double tinggi;
     private final double rDasar;
-    public double luas;
-    public double volume;
 
     public JuringBola() {
         super();
         this.tinggi = 10;
         this.rDasar = 10;
-        this.luas = this.hitungLuas();
-        this.volume = this.hitungVolume();
     }
     
     public JuringBola(double r, double rDasar, double tinggi) {
         super(r);
         this.tinggi = tinggi;
         this.rDasar = rDasar;
-        this.luas = this.hitungLuas();
-        this.volume = this.hitungVolume();
     }
 
     @Override

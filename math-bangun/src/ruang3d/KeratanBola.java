@@ -8,16 +8,12 @@ public final class KeratanBola extends Bola{
     private final double t;
     private final double r1;
     private final double r2;
-    public double luas;
-    public double volume;
 
     public KeratanBola() {
         super();
         this.t = 10;
         this.r1 = 10;
         this.r2 = 10;
-        this.luas = this.hitungLuas();
-        this.volume = this.hitungVolume();
     }
     
     public KeratanBola( double r, double r1, double r2, double t) {
@@ -25,8 +21,6 @@ public final class KeratanBola extends Bola{
         this.t = t;
         this.r1 = r1;
         this.r2 = r2;
-        this.luas = this.hitungLuas();
-        this.volume = this.hitungVolume();
     }
     
     @Override

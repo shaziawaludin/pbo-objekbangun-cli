@@ -38,6 +38,7 @@ public class MathBangun {
                         } catch (Exception e) {
                             System.out.println("Kosong jadi Kami isi otomatis");
                             lingkaran = new Lingkaran();
+                            sc.next();
                         }
                         System.out.println("==[ Hasil ]==");
                         System.out.println("Luas: " + lingkaran.luas);
@@ -75,10 +76,11 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 tabung = new Tabung();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + tabung.luas);
-                            System.out.println("Volume: " + tabung.volume);
+                            System.out.println("Luas: " + tabung.hitungLuas());
+                            System.out.println("Volume: " + tabung.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
@@ -95,10 +97,11 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 kerucut = new Kerucut();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + kerucut.luas);
-                            System.out.println("Volume: " + kerucut.volume);
+                            System.out.println("Luas: " + kerucut.hitungLuas());
+                            System.out.println("Volume: " + kerucut.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
@@ -120,10 +123,11 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 kT = new KerucutTerpancung();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + kT.luas);
-                            System.out.println("Volume: " + kT.volume);
+                            System.out.println("Luas: " + kT.hitungLuas());
+                            System.out.println("Volume: " + kT.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
@@ -138,36 +142,36 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 bola = new Bola();
+                                sc.next();
                             }
                             System.out.println("");
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + bola.luas);
-                            System.out.println("Volume: " + bola.volume);
+                            System.out.println("Luas: " + bola.hitungLuas());
+                            System.out.println("Volume: " + bola.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
                         case '5': {
-                            double r, r1, r2, t;
+                            double r,r2, t;
                             TemberengBola TBola;
                             System.out.println("<<| TEMBERENG BOLA |>>");
                             try {
                                 System.out.print("Jejari tengah: ");
                                 r = sc.nextDouble();
-                                System.out.print("Jejari atas: ");
-                                r1 = sc.nextDouble();
                                 System.out.print("Jejari dasar: ");
                                 r2 = sc.nextDouble();
                                 System.out.print("Tinggi: ");
                                 t = sc.nextDouble();
                                 System.out.println("");
-                                TBola = new TemberengBola(r, r1, r2, t);
+                                TBola = new TemberengBola(r, r2, t);
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 TBola = new TemberengBola();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + TBola.luas);
-                            System.out.println("Volume: " + TBola.volume);
+                            System.out.println("Luas: " + TBola.hitungLuas());
+                            System.out.println("Volume: " + TBola.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
@@ -189,10 +193,11 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 KBola = new KeratanBola();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + KBola.luas);
-                            System.out.println("Volume: " + KBola.volume);
+                            System.out.println("Luas: " + KBola.hitungLuas());
+                            System.out.println("Volume: " + KBola.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
@@ -216,10 +221,11 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 cBola = new CincinBola();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + cBola.luas);
-                            System.out.println("Volume: " + cBola.volume);
+                            System.out.println("Luas: " + cBola.hitungLuas());
+                            System.out.println("Volume: " + cBola.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
@@ -239,10 +245,11 @@ public class MathBangun {
                             } catch (Exception e) {
                                 System.out.println("Kosong jadi Kami isi otomatis");
                                 jBola = new JuringBola();
+                                sc.next();
                             }
                             System.out.println("==[ Hasil ]==");
-                            System.out.println("Luas: " + jBola.luas);
-                            System.out.println("Volume: " + jBola.volume);
+                            System.out.println("Luas: " + jBola.hitungLuas());
+                            System.out.println("Volume: " + jBola.hitungVolume());
                             System.out.println("\n");
                             break;
                         }
