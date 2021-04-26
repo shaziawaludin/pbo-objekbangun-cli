@@ -16,6 +16,12 @@ public class Bola extends Lingkaran implements Ruang3d {
     public double luas;
     public double volume;
 
+       public Bola(){
+        super();
+        this.luas = hitungLuas();
+        this.volume = hitungVolume();
+    }
+    
     public Bola(double r) {
         super(r);
         this.luas = hitungLuas();

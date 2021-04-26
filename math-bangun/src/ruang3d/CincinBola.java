@@ -18,6 +18,16 @@ public class CincinBola extends Bola {
     public double luas;
     public double volume;
 
+    public CincinBola() {
+        super();
+        this.tinggi = 10;
+        this.rDasar = 10;
+        this.rAtas = 10;
+        this.pTaliBusur = 10;
+        this.luas = this.hitungLuas();
+        this.volume = this.hitungVolume();
+    }
+
     public CincinBola(double r,
             double rDasar,
             double rAtas,
