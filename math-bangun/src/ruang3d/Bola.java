@@ -4,16 +4,19 @@
  * and open the template in the editor.
  */
 package ruang3d;
+
 import bidang2d.Lingkaran;
+
 /**
  *
  * @author shazi awaludin
  */
-public class Bola extends Lingkaran implements Ruang3d{
+public class Bola extends Lingkaran implements Ruang3d {
+
     public double luas;
     public double volume;
-    
-    public Bola(double r){
+
+    public Bola(double r) {
         super(r);
         this.luas = hitungLuas();
         this.volume = hitungVolume();
@@ -26,9 +29,7 @@ public class Bola extends Lingkaran implements Ruang3d{
 
     @Override
     public double hitungVolume() {
-       return (4/3.0) * super.luas * super.r;
+        return (4 / 3.0) * super.luas * super.r;
     }
-    
-    
-    
+
 }

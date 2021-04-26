@@ -30,7 +30,9 @@ public final class KeratanBola extends Bola{
     
     @Override
     public double hitungLuas(){
-        return 1/6.0 * Math.PI * super.r;
+        return 1/6.0 * Math.PI * super.r
+                + Math.PI*Math.pow(this.r1, 2)
+                + Math.PI*Math.pow(this.r2, 2);
     }
     
     @Override

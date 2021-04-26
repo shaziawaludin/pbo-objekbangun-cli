@@ -4,8 +4,6 @@ import bidang2d.Lingkaran;
 import java.util.Scanner;
 import ruang3d.*;
 
-
-
 public class MathBangun {
 
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class MathBangun {
             System.out.println("<<| MENU |>>");
             System.out.println("1.Bidang 2D");
             System.out.println("2.Ruang 3D");
-            System.out.println("0. Exit");
+            System.out.println("0.Exit");
             System.out.print("Pilih: ");
             menu = sc.next().charAt(0);
             System.out.println("\n");
@@ -60,9 +58,9 @@ public class MathBangun {
                         case '1':{
                             double r,t;
                             System.out.println("<<| TABUNG |>>");
-                            System.out.println("Jejari: ");
+                            System.out.print("Jejari: ");
                             r = sc.nextDouble();
-                            System.out.println("Tinggi: ");
+                            System.out.print("Tinggi: ");
                             t = sc.nextDouble();
                             Tabung tabung = new Tabung(r,t);
                             System.out.println("==[ Hasil ]==");
@@ -183,7 +181,7 @@ public class MathBangun {
                             r = sc.nextDouble();
                             System.out.print("Jejari Dasar:");
                             r1 = sc.nextDouble();
-                            System.out.println("Tinggi: ");
+                            System.out.print("Tinggi: ");
                             t = sc.nextDouble();
                             System.out.println("");
                             JuringBola jBola = new JuringBola(r, r1, t);

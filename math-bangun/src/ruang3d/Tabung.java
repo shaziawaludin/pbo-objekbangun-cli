@@ -11,7 +11,8 @@ import bidang2d.Lingkaran;
  *
  * @author shazi awaludin
  */
-public class Tabung extends Lingkaran implements Ruang3d{
+public class Tabung extends Lingkaran implements Ruang3d {
+
     public double luas;
     public double volume;
     private final double tinggi;
@@ -22,14 +23,14 @@ public class Tabung extends Lingkaran implements Ruang3d{
         this.luas = this.hitungLuas();
         this.volume = this.hitungVolume();
     }
-    
+
     public double hitungLuas() {
         double luasSelimut = super.keliling * this.tinggi;
-        return 2*super.luas+luasSelimut;
+        return 2 * super.luas + luasSelimut;
     }
 
     public double hitungVolume() {
         return super.luas * this.tinggi;
     }
-    
+
 }
