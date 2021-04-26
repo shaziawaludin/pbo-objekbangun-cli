@@ -15,12 +15,12 @@ public class Bola extends Lingkaran implements Ruang3d {
     }
 
     public double hitungLuas() {
-        return (4) * super.luas;
+        return (4) * super.hitungLuas();
     }
 
     
     public double hitungVolume() {
-        return (4 / 3.0) * super.luas * super.r;
+        return (4 / 3.0) * super.hitungLuas() * super.r;
     }
 
 }

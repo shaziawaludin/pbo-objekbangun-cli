@@ -7,7 +7,7 @@ public interface Bidang2d {
     final double lebar =0;
     final double tinggi =0;
     final double keliling=0;
-    final double luas =0;
+//    final double luas =0;
     
     double hitungLuas();
 

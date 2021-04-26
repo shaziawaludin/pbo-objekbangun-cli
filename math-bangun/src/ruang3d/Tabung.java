@@ -4,7 +4,6 @@ import bidang2d.Lingkaran;
 
 
 public class Tabung extends Lingkaran implements Ruang3d {
-
     private final double tinggi;
 
      public Tabung() {
@@ -16,14 +15,15 @@ public class Tabung extends Lingkaran implements Ruang3d {
         super(r);
         this.tinggi = tinggi;
     }
-
+    
+    @Override
     public double hitungLuas() {
         double luasSelimut = super.keliling * this.tinggi;
-        return 2 * super.luas + luasSelimut;
+        return 2 * super.hitungLuas() + luasSelimut;
     }
 
     public double hitungVolume() {
-        return super.luas * this.tinggi;
+        return super.hitungLuas() * this.tinggi;
     }
 
 }

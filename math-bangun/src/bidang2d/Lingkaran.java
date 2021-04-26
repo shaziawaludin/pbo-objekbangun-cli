@@ -17,13 +17,11 @@ public class Lingkaran implements Bidang2d{
         this.keliling = hitungKeliling();
     }
 
-    
-    @Override
+
     public double hitungLuas() {
         return Math.pow(this.r, 2) * Math.PI;
     }
 
-    @Override
     public double hitungKeliling() {
         return 2.0*Math.PI*this.r;
     }
