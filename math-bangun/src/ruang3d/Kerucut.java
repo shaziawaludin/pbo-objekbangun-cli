@@ -1,22 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ruang3d;
 
 import bidang2d.Lingkaran;
 
-/**
- *
- * @author shazi awaludin
- */
+
 public class Kerucut extends Lingkaran implements Ruang3d {
 
     private final double tinggi;
     public double luas;
     public double volume;
 
+     public Kerucut() {
+        super();
+        this.tinggi = 10;
+        this.luas = this.hitungLuas();
+        this.volume = this.hitungVolume();
+    }
+
+    
     public Kerucut(double r, double tinggi) {
         super(r);
         this.tinggi = tinggi;

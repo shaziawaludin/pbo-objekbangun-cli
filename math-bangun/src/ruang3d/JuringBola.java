@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ruang3d;
 
-/**
- *
- * @author shazi awaludin
- */
+
 public final class JuringBola extends Bola {
 
     private double tinggi;
@@ -16,6 +8,14 @@ public final class JuringBola extends Bola {
     public double luas;
     public double volume;
 
+    public JuringBola() {
+        super();
+        this.tinggi = 10;
+        this.rDasar = 10;
+        this.luas = this.hitungLuas();
+        this.volume = this.hitungVolume();
+    }
+    
     public JuringBola(double r, double rDasar, double tinggi) {
         super(r);
         this.tinggi = tinggi;

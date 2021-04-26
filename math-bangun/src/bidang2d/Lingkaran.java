@@ -1,19 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bidang2d;
 
-/**
- *
- * @author shazi awaludin
- */
 public class Lingkaran implements Bidang2d{
     public double luas;
     public double r;
     public double keliling;
-
+    
+     public Lingkaran(){
+        this.r = 10;
+        this.luas = hitungLuass();
+        this.keliling = hitungKeliling();
+//        this.hitungLuass();
+//        hitungKeliling();
+    }
+     
     public Lingkaran(double r){
         this.r = r;
         this.luas = hitungLuass();

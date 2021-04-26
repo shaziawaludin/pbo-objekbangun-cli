@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ruang3d;
 
-/**
- *
- * @author shazi awaludin //
- */
+
 public class KerucutTerpancung extends Kerucut {
 
     private double t1;
@@ -18,6 +10,17 @@ public class KerucutTerpancung extends Kerucut {
     public final double luas;
     public final double volume;
 
+    public KerucutTerpancung() {
+        super();
+        this.t1 = 10;
+        this.t2 = 10;
+        this.ratas = 10;
+        this.s2 = (Math.sqrt((Math.pow(super.r, 2)
+                + Math.pow(this.t2, 2))));
+        this.luas = this.hitungLuas();
+        this.volume = this.hitungVolume();
+    }
+    
     public KerucutTerpancung(double r, double ratas, double t1, double t2) {
         super(r, t1 + t2);
         this.t1 = t1;
