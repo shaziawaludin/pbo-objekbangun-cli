@@ -1,3 +1,8 @@
+//NAMA ANGGOTA KELOMPOK
+//123190014 Annas Adharuqudni
+//123190019 Arif Pribadi
+//123190038 Gisani Miftahul Rahma
+//123190123 Shazi awaludin
 package math.bangun;
 
 import bidang2d.Lingkaran;
